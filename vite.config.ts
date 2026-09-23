@@ -6,18 +6,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 const rootDir = path.dirname(fileURLToPath(import.meta.url));
 
+
 export default defineConfig({
   base: "/mohamed-web-portfolio/",
   plugins: [react(), tailwindcss()],
-  resolve: {
-    alias: {
-      "@": path.resolve(rootDir, "client", "src"),
-      "@shared": path.resolve(rootDir, "shared"),
-    },
-  },
-  root: path.resolve(rootDir, "client"),
-  build: {
-    outDir: path.resolve(rootDir, "dist"),
-    emptyOutDir: true,
-  },
 });
