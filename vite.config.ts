@@ -9,7 +9,7 @@ const rootDir = path.dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   root: path.resolve(rootDir, "client"),
 
-  base: "/mohamed-web-portfolio/",
+  base: "/",
 
   plugins: [
     react(),
